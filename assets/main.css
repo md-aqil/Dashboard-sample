@@ -20,7 +20,7 @@ body {
     height: var(--size);
     display: block;
     content: '';
-    background: #ddd;
+    background:#a5a5a5;
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -96,6 +96,7 @@ display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
 position: relative;
+align-items: center;
 }
 .r-layout .r-img {
 position: relative;
@@ -192,7 +193,7 @@ font-weight: bold;
 margin-right: 20px;
 }
 .card-sm-content .r-layout .r-content .title {
-font-size: 14px;
+font-size: 13px;
 }
 .r-layout .r-content .title {
 font-size: 22px;
@@ -209,7 +210,6 @@ margin: 0;
 font-size: 14px;
 color: #666666;
 margin: 0;
-margin-bottom: 10px;
 }
 .taglist {
 display: -webkit-box;
