@@ -5,12 +5,13 @@ body {
 
 }
 :root {
-   
 --light-teal:#a6c8cc;
 --light-gray:#ddd5d6;
+--theme-color1:#e33f53;
+--theme-color2:#6F62C4;
 
---theme-color1: #546de5;
 }
+
 .indi{
     position: relative;;
 }
@@ -359,6 +360,7 @@ margin-bottom: 15px;
 
 .swiper-full-mobile .swiper-slide {
 height: 100%;
+padding: 20px;
 }
 .swiper-full-mobile .swiper-slide img{
 width: 100%;
@@ -525,4 +527,62 @@ object-fit: cover;
 	animation-delay: 1200ms !important;
 	
   }
-  
+ body{
+	background: url(../assets/pexels-ricardo-esquivel-5362093.jpg) no-repeat;
+	background-attachment: fixed; 
+	background-size: cover;
+	height: 100vh;
+} 
+
+.glass {
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+	background: inherit;
+    overflow: hidden;
+    border: 1px solid #ffffff96;
+}
+
+.glass:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	filter: blur(10px);
+	margin: -20px;
+}
+.sidebar {
+    width: 95px;
+    height: 94vh;
+    position: fixed;
+    left: 20px;
+    top: 21px;
+}
+#main {
+    width: calc(100% - 95px);
+    margin-left: 110px;
+}
+.r-layout .r-content .title {
+    color:var(--theme-color1)
+}
+.h3-titlte {
+    color: #fff;
+}
+.r-layout .r-content p ,.sensor-title{
+    color: #fff;
+}
+.side-iconlist {
+    padding: 0;
+    list-style: none;
+}
+.side-iconlist li img {
+    width: 70px;
+    display: block;
+    margin: 10px auto;
+}

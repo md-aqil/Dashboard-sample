@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <style>
+        
+/* swiper slider */ 
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    
+  }
+.swiper-full-mobile {
+  position: relative;
+  margin: 50px auto;
+  padding-bottom: 50px;
+}
+
+
+.swiper-full-mobile .swiper-slide {
+height: 100%;
+padding: 20px;
+}
+.swiper-full-mobile .swiper-slide img{
+width: 100%;
+height: 500px;
+object-fit: cover;
+
+}
+.swiper-button-next, .swiper-button-prev {
+    background-color: #fff;
+    padding: 3px;
+    background-size: 18px;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 0;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 0;
+}
+
+.glass {
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+	background: inherit;
+    overflow: hidden;
+    border: 1px solid #ffffff96;
+}
+
+.glass:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	filter: blur(10px);
+	margin: -20px;
+}
+body{
+	background: url(../assets/b1.jpg) no-repeat;
+	background-attachment: fixed; 
+	background-size: cover;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-position: bottom;
+} 
+body:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#0000002a
+}
+.swiper-slide h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ED1E79;
+    margin: 0;
+    margin-top: 15px;
+}
+.swiper-slide p{
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 300;
+    color: black;
+}
+.title {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+}
+    </style>
+</head>
+<body>
+    <section class="c-container">
+        <h3 class="title">Gallery</h3>
+        <div class="swiper-container swiper-full-mobile swiper-container-initialized swiper-container-horizontal">
+           <div class="swiper-wrapper" >
+             <div class="swiper-slide glass">
+              <img src="http://md-aqil.github.io/images/adolescent-beautiful-beauty-247878.jpg" alt="">
+              <h4>Md Aqil</h4>
+              <p>UI/UX Designer</p>
+             </div>
+              <div class="swiper-slide glass">
+              <img src="http://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
+              <h4>Md Aqil</h4>
+              <p>UI/UX Designer</p>
+             </div>
+              <div class="swiper-slide glass">
+              <img src="http://md-aqil.github.io/images/bikini-body-female-881583.jpg" alt="">
+              <h4>Md Aqil</h4>
+              <p>UI/UX Designer</p>
+             </div>
+             <div class="swiper-slide glass">
+              <img src="http://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
+              <h4>Md Aqil</h4>
+              <p>UI/UX Designer</p>
+             </div>
+             <div class="swiper-slide glass">
+              <img src="http://md-aqil.github.io/images/abstract-expressionism-abstract-painting-acrylic-1690351.jpg" alt="">
+              <h4>Md Aqil</h4>
+              <p>UI/UX Designer</p>
+             </div>
+         
+            <div class="swiper-slide glass">
+              <img src="http://md-aqil.github.io/images/beautiful-bikini-daylight-745767.jpg" alt="">
+              <h4>Md Aqil</h4>
+              <p>UI/UX Designer</p>
+             </div>
+            <div class="swiper-slide glass">
+              <img src="http://md-aqil.github.io/images/adult-beautiful-bikini-1308228.jpg" alt="">
+              <h4>Md Aqil</h4>
+              <p>UI/UX Designer</p>
+             </div>
+            <div class="swiper-slide glass">
+              <img src="http://md-aqil.github.io/images/afro-afro-hair-attractive-2603391.jpg" alt="">
+              <h4>Md Aqil</h4>
+              <p>UI/UX Designer</p>
+            </div>
+  
+       </div>
+  
+         <!-- Add Pagination -->
+         <div class="swiper-pagination"></div>
+         <!-- Add Arrows -->
+         <div class="swiper-button-next "></div>
+         <div class="swiper-button-prev"></div>
+  </section>
+
+    <script src="assets/js/swiper.js"></script>
+    <script>
+        
+var swiperMobile = new Swiper('.swiper-container.swiper-full-mobile', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    slideToClickedSlide:true,
+    centeredSlides:true,
+    effect: 'slide',
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    loop:true,
+      autoplay: {
+        delay: 5000,
+      },
+
+      keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+	coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 50,
+        modifier: 6,
+        slideShadows : false,
+	  },
+  });
+  
+  
+    </script>
+</body>
+</html>
